@@ -1,0 +1,237 @@
+{
+    // Language Settings
+    "[css]": {
+        "editor.suggest.insertMode": "replace"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[less]": {
+        "comments": {
+            "blockComment": ["/*", "*/"],
+            "lineComment": ["/*", "*/"]
+        },
+        "editor.suggest.insertMode": "replace"
+},
+"php.validate.executablePath": "C:\\php-7.2.8-Win32-VC15-x64\\php.exe",
+    "python.pythonPath": "C:\\Users\\Jonathan\\AppData\\Local\\Programs\\Python\\Python37-32\\python.exe",
+    "yaml.schemas": {
+        "file:///c%3A/Users/Jonathan/.vscode/extensions/atlassian.atlascode-2.10.12/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+    },
+
+    // Jira Settings
+    "atlascode.bitbucket.enabled": false,
+    "atlascode.jira.enabled": false,
+    "atlascode.jira.jqlList": [
+        {
+            "enabled": true,
+            "id": "665e8edc-788b-49c3-9f55-8206b3f107b6",
+            "monitor": true,
+            "name": "ENGINE Tickets",
+            "query": "assignee = currentUser() ORDER BY lastViewed DESC ",
+            "siteId": "d251fe62-3428-4257-a1ee-84415e2f53bc"
+        },
+        {
+            "enabled": true,
+            "id": "354f68b0-bd4b-4982-86cc-fff38678e28a",
+            "monitor": true,
+            "name": "ADXDB Tickets",
+            "query": "assignee = currentUser() ORDER BY lastViewed DESC ",
+            "siteId": "94e55dd7-33d0-4ac1-bb59-3f1d68d1fb97"
+        }
+    ],
+    "atlascode.jira.lastCreateSiteAndProject": {
+        "projectKey": "ACME",
+        "siteId": "d251fe62-3428-4257-a1ee-84415e2f53bc"
+    },
+    "atlascode.jira.todoIssues.triggers": ["BUG:", "FIXME:", "ISSUE:"],
+    "atlascode.jira.workingSite": {
+        "baseUrlSuffix": "atlassian.net"
+    },
+    "atlascode.showWelcomeOnInstall": false,
+
+    // Editor Settings
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.bracketPairColorization.enabled": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": false,
+    "editor.guides.bracketPairs": "active",
+    "editor.minimap.enabled": false,
+    "editor.stickyScroll.enabled": true,
+    "editor.stickyScroll.maxLineCount": 4,
+    "editor.tabSize": 4,
+    "editor.wordWrap": "on",
+
+    // Explorer Settings
+    "explorer.confirmDragAndDrop": false,
+
+    // Files Settings
+    "files.associations": {
+        "*.ts": "typescript"
+    },
+    "files.watcherExclude": {
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true,
+        "**/node_modules/*/**": true
+    },
+
+    // Gitlens Extension
+    "gitlens.currentLine.enabled": true,
+    "gitlens.hovers.currentLine.over": "line",
+
+    // Material Icons
+    "material-icon-theme.activeIconPack": "none",
+    "material-icon-theme.folders.color": "#90a4ae",
+    "material-icon-theme.folders.theme": "classic",
+    "material-icon-theme.hidesExplorerArrows": false,
+
+    // Database Connections
+    "mssql.connections": [
+        {
+            "database": "{{put-database-name-here}}",
+            "password": "",
+            "server": "{{put-server-name-here}}",
+            "user": "{{put-username-here}}"
+        }
+    ],
+    // Prettier Extension
+    "prettier.tabWidth": 4,
+
+    // Remote SSH Extension
+    "remote.SSH.remotePlatform": {
+        "epdevkiste": "linux"
+    },
+
+    // Search Settings
+    "search.collapseResults": "alwaysCollapse",
+
+    // Telemetry
+    "telemetry.telemetryLevel": "off",
+
+    // Terminal Shell Settings
+    "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+
+    // Vim Extension
+    "vim.cursorStylePerMode.insert": "line",
+    "vim.cursorStylePerMode.normal": "block",
+    "vim.cursorStylePerMode.replace": "block",
+    "vim.cursorStylePerMode.visual": "block",
+    "vim.cursorStylePerMode.visualblock": "block",
+    "vim.cursorStylePerMode.visualline": "block",
+    "vim.easymotion": true,
+    "vim.handleKeys": {
+        "<C-f>": false,
+        "<C-w>": false
+    },
+    "vim.hlsearch": false,
+    "vim.incsearch": true,
+    "vim.insertModeKeyBindings": [
+        // {
+        //     "before": ["j", "k"],
+        //     "after": ["<Esc>"]
+        // }
+    ],
+    "vim.leader": "<space>",
+    "vim.normalModeKeyBindingsNonRecursive": [
+        // {
+        //     "before": ["<leader>", "d"],
+        //     "commands": ["editor.action.addSelectionToNextFindMatch"]
+        // },
+        {
+            "before": ["K"],
+            "commands": ["lineBreakInsert"],
+            "silent": true
+        },
+        {
+            "before": [":"],
+            "commands": ["workbench.action.showCommands"]
+        },
+        {
+            "before": ["<C-d>"],
+            "after": ["<C-d>", "z", "z"]
+        },
+        {
+            "before": ["<C-u>"],
+            "after": ["<C-u>", "z", "z"]
+        }
+    ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+        // {
+        //     "before": ["<leader>", "d"],
+        //     "commands": ["editor.action.addSelectionToNextFindMatch"]
+        // }
+    ],
+    "vim.insertModeKeyBindingsNonRecursive": [
+        {
+            "before": ["<C-c>"],
+            "after": ["<Esc>"]
+        }
+    ],
+    "vim.smartRelativeLine": true,
+    "vim.statusBarColorControl": false,
+    "vim.statusBarColors.commandlineinprogress": "#007ACC",
+    "vim.statusBarColors.easymotioninputmode": "#007ACC",
+    "vim.statusBarColors.easymotionmode": "#007ACC",
+    "vim.statusBarColors.insert": ["#BF616A", "#000"],
+    "vim.statusBarColors.normal": ["#8FBCBB", "#000"],
+    "vim.statusBarColors.replace": "#D08770",
+    "vim.statusBarColors.searchinprogressmode": "#007ACC",
+    "vim.statusBarColors.surroundinputmode": "#007ACC",
+    "vim.statusBarColors.visual": ["#B48EAD", "#000"],
+    "vim.statusBarColors.visualblock": ["#A3BE8C", "#000"],
+    "vim.statusBarColors.visualline": ["#B48EAD", "#000"],
+    "vim.useCtrlKeys": true,
+    "vim.useSystemClipboard": true,
+
+    // Neovim extension
+    "vscode-neovim.neovimExecutablePaths.win32": "C:\\tools\\neovim\\nvim-win64\\bin\\nvim.exe",
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1,
+        "vscodevim.vim": 1,
+        "JulianIaquinandi.nvim-ui-modifier": 1
+    },
+
+    // Window Display Settings
+    "window.menuBarVisibility": "toggle",
+    "window.title": "${rootName}${separator}${activeEditorShort}${separator}${appName}",
+
+    // neovim ui settings
+    "nvim-ui.nvimColorNormal": "#ffc600",
+    "nvim-ui.nvimColorInsert": "#D32F2F",
+    "nvim-ui.nvimColorVisual": "#673AB7",
+    "nvim-ui.nvimColorReplace": "#ebebeb",
+    "nvim-ui.nvimColorCustomizationKeys": ["editorCursor.foreground"],
+
+    // Workbench Settings
+    "workbench.editor.wrapTabs": true,
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.panel.opensMaximized": "always",
+    "workbench.sideBar.location": "left",
+    "workbench.statusBar.visible": true,
+    "workbench.editorAssociations": {
+        "*.md": "vscode.markdown.preview.editor"
+    },
+    "editor.lineNumbers": "relative",
+    "editor.cursorSurroundingLines": 16,
+    "workbench.colorCustomizations": {
+        "editorCursor.foreground": "#ffc600"
+    },
+    "vscode-neovim.mouseSelectionStartVisualMode": true,
+    "vscode-neovim.neovimExecutablePaths.linux": "/usr/bin/nvim",
+    "window.zoomLevel": 1,
+    "editor.cursorBlinking": "solid",
+    "CI.ignoreSymbols": true,
+    "CI.system": "vendor/codeigniter/system",
+    "[php]": {
+        "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+    },
+    "workbench.colorTheme": "Catppuccin Macchiato"
+}

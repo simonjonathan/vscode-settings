@@ -1,0 +1,10 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "PHP SCSS compile",
+            "type": "shell",
+            "command": "bin/pscss packages/ep_template_pandomo_typo10/Resources/Public/Scss/main.scss packages/ep_template_pandomo_typo10/Resources/Public/Css/main.css"
+        }
+    ]
+}
